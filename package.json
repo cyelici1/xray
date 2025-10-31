@@ -1,0 +1,12 @@
+{
+  "name": "render-vless-proxy",
+  "version": "1.0.0",
+  "description": "VLESS/WS Proxy on Render",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js" 
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
