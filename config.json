@@ -1,0 +1,33 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "port": 8080, // Render ترافیک ورودی را به پورت 8080 هدایت می کند
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "00000000-1111-2222-3333-444444444444",
+            "level": 0
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": []
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/your_secret_path_456"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
